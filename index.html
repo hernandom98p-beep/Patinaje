@@ -14,7 +14,48 @@ header{background:#080a12f5;border-bottom:1px solid #ffffff18;position:sticky;to
 .hero{min-height:530px;display:flex;align-items:center;background:linear-gradient(90deg,#080a12 0%,#080a12e8 37%,#080a1280 73%,#080a1240 100%),url("asset/portada.jpg") center/cover no-repeat}.hero-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center;padding:45px 0}.hero-logo{display:block;width:100%;max-width:420px;max-height:390px;object-fit:contain;margin:auto}.eyebrow{color:var(--fucsia);font-size:12px;font-weight:bold;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(29px,3.8vw,47px);line-height:1.08;margin:14px 0 0;font-weight:900}.script{color:var(--fucsia);display:block;font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(43px,5vw,65px);font-style:italic;font-weight:bold;line-height:1.2}.hero p{max-width:500px;color:#e6e6ef;font-size:15px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:12px;padding:12px 24px;border:2px solid var(--fucsia);border-radius:40px;font-weight:bold;font-size:12px;transition:.2s}.btn-primary{background:linear-gradient(100deg,var(--morado),var(--fucsia));border-color:transparent}.btn:hover{transform:translateY(-2px)}.arrow{font-size:18px}
 .values{padding:34px 0;background:#080a11}.value-grid{display:grid;grid-template-columns:repeat(4,1fr)}.value{padding:8px 15px;text-align:center;border-right:1px solid #454657}.value:last-child{border-right:0}.value-icon{font-size:43px;line-height:1.3;color:var(--fucsia)}.value h3{font-size:14px;margin:10px 0 5px}.value p{color:var(--gris);font-size:13px;margin:0}
 .about{display:grid;grid-template-columns:1fr 1fr;background:#f3f3f8;color:#101321}.about-copy{padding:48px 7%;display:flex;justify-content:flex-end;align-items:center}.about-content{max-width:520px}.about h2{font-size:clamp(30px,3.5vw,43px);line-height:1.1;margin:12px 0}.about p{color:#4c4e5c;font-size:14px}.about-photo{min-height:330px;background:url("asset/nosotros.jpg") center/cover no-repeat}
-.training{display:grid;grid-template-columns:1fr 1fr;align-items:center}.training-copy{padding:45px 8%}.training h2{font-size:clamp(30px,3.6vw,43px);line-height:1.1;margin:12px 0}.training p{color:var(--gris);font-size:14px}.training-photo{min-height:330px;background:linear-gradient(90deg,#080a1230,transparent),url("asset/entrenamientos.jpg") center/cover no-repeat}
+.training{display:grid;
+          /* Misión y visión */
+.mision-vision {
+  padding: 55px 0;
+  background: #10121f;
+}
+
+.mision-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.mv-card {
+  padding: 30px;
+  border: 1px solid #873fe955;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #191729, #0b0d18);
+}
+
+.mv-card h2 {
+  color: var(--fucsia);
+  font-size: 27px;
+  margin: 10px 0;
+}
+
+.mv-card p {
+  color: var(--gris);
+  font-size: 14px;
+  margin: 0;
+}
+
+.mv-icon {
+  font-size: 35px;
+}
+
+@media (max-width: 720px) {
+  .mision-vision-grid {
+    grid-template-columns: 1fr;
+  }
+}
+          grid-template-columns:1fr 1fr;align-items:center}.training-copy{padding:45px 8%}.training h2{font-size:clamp(30px,3.6vw,43px);line-height:1.1;margin:12px 0}.training p{color:var(--gris);font-size:14px}.training-photo{min-height:330px;background:linear-gradient(90deg,#080a1230,transparent),url("asset/entrenamientos.jpg") center/cover no-repeat}
 .gallery{padding:45px 0}.section-heading{margin-bottom:22px}.section-heading h2{font-size:clamp(25px,3vw,36px);margin:7px 0}.gallery-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.gallery-grid img{width:100%;height:135px;object-fit:cover;border-radius:9px;border:1px solid #ffffff20}
 .join{text-align:center;padding:55px 0;background:radial-gradient(ellipse at center,#32203d,#080a12 70%)}.join h2{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:10px 0}.join p{max-width:650px;color:var(--gris);margin:0 auto 24px}.contact{padding:30px 0 45px;text-align:center}.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}footer{padding:25px 0;text-align:center;border-top:1px solid #ffffff1c;background:#080a11}.footer-logo{width:170px;max-height:95px;object-fit:contain;display:block;margin:auto}.footer-motto{color:#b8b8c7;font-size:11px;letter-spacing:3px}.copyright{font-size:11px;color:#898b9c;margin-top:12px}
 .floating{position:fixed;right:15px;bottom:22px;z-index:90;display:flex;flex-direction:column;gap:10px}.float-item{display:flex;align-items:center;justify-content:flex-end;gap:9px}.float-label{background:#111421ed;border:1px solid #ffffff20;border-radius:25px;padding:7px 12px;font-size:11px}.float-btn{width:47px;height:47px;border-radius:50%;display:grid;place-items:center;box-shadow:0 5px 15px #0007;transition:.2s;flex-shrink:0}.float-btn:hover{transform:scale(1.08)}.float-btn svg{width:24px;height:24px;display:block}.wa{background:#24c963}.ig{background:linear-gradient(135deg,#7547ee,#ed38a9,#ff914d)}.location{background:#8545e9}.calendar{background:#6158f1}
@@ -48,7 +89,39 @@ header{background:#080a12f5;border-bottom:1px solid #ffffff18;position:sticky;to
 
 <section class="about" id="nosotros"><div class="about-copy"><div class="about-content"><div class="eyebrow">SOBRE NOSOTROS</div><h2>Ángeles del Patinaje</h2><p>Somos un club comprometido con el desarrollo deportivo y personal de cada uno de nuestros patinadores. Aquí, el patinaje es una pasión que nos une, nos reta y nos hace mejores.</p><a class="btn btn-primary" href="#contacto">VER MÁS <span class="arrow">→</span></a></div></div><div class="about-photo" role="img" aria-label="Patinadores entrenando"></div></section>
 
-<section class="training" id="entrenamientos"><div class="training-copy"><div class="eyebrow">ENTRENAMIENTOS</div><h2>Disciplina hoy,<span class="script">grandes resultados</span></h2><p>Entrenamientos para desarrollar técnica, resistencia y confianza, con trabajo en equipo y pasión por el patinaje.</p><a class="btn" href="#inscripciones">VER ENTRENAMIENTOS <span class="arrow">→</span></a></div><div class="training-photo" role="img" aria-label="Equipo de patinaje en la pista"></div></section>
+<section class="training" id="entrenamientos"><section class="mision-vision" id="mision-vision">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">NUESTRA IDENTIDAD</div>
+      <h2>Lo que nos inspira a seguir creciendo</h2>
+    </div>
+
+    <div class="mision-vision-grid">
+
+      <article class="mv-card">
+        <div class="mv-icon">🎯</div>
+        <h2>Nuestra misión</h2>
+        <p>
+          Aquí escribe la misión de Ángeles del Patinaje:
+          su propósito, cómo forman a sus deportistas y los
+          valores que promueven a través del patinaje.
+        </p>
+      </article>
+
+      <article class="mv-card">
+        <div class="mv-icon">🌟</div>
+        <h2>Nuestra visión</h2>
+        <p>
+          Aquí escribe la visión del club: qué quiere alcanzar
+          en el futuro, cómo espera crecer y qué reconocimiento
+          aspira a obtener en el ámbito deportivo.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section><div class="training-copy"><div class="eyebrow">ENTRENAMIENTOS</div><h2>Disciplina hoy,<span class="script">grandes resultados</span></h2><p>Entrenamientos para desarrollar técnica, resistencia y confianza, con trabajo en equipo y pasión por el patinaje.</p><a class="btn" href="#inscripciones">VER ENTRENAMIENTOS <span class="arrow">→</span></a></div><div class="training-photo" role="img" aria-label="Equipo de patinaje en la pista"></div></section>
 
 <section class="gallery" id="galeria"><div class="container"><div class="section-heading"><div class="eyebrow">GALERÍA</div><h2>Nuestra pasión en cada movimiento</h2></div>
   <div class="gallery-grid">
